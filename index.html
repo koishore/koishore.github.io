@@ -13,26 +13,26 @@
 <body>
   <nav class= 'orange darken-3'>
     <div class="nav-wrapper hide-on-large-only">
-      <a href="#" class="brand-logo hide-on-small-only center">Koishore Roy</a>
-      <a href="#" class="brand-logo hide-on-med-only center">Koishore</a>
+      <a href="index.html" class="brand-logo hide-on-small-only center"><font face = 'serif'>Koishore Roy</font></a>
+      <a href="index.html" class="brand-logo hide-on-med-only center">Koishore</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
     <div class="nav-wrapper hide-on-med-and-down">
-      <a href="#" class="brand-logo right">Koishore Roy</a>
+      <a href="index.html" class="brand-logo right"><font face = 'serif'>Koishore Roy</font></a>
     </div>
     <ul id="mobile-demo" class="side-nav fixed">
       <li>
         <div align = 'center'class="user-view">
           <div class="background">
-            <img class="img-responsive" src="img/background.jpg">
+            <img class="responsive-img" src="img/background.jpg">
           </div>
-          <a href="#!user"><img class="img-responsive circle" src="img/Koishore.jpg"></a>
-          <a href="#!name"><span class="white-text name">Koishore Roy</span></a>
-          <a href="#!email"><span class="white-text email">koishore.roy@ashoka.edu.in</span></a>
+          <img class="responsive-img circle" src="img/Koishore.jpg">
+          <span class="white-text name"><font face = 'verdana'>Koishore Roy</font></span>
+          <span class="white-text email"><font face = 'serif'>Eat. Code. Sleep. Repeat.</font></span>
         </div>
       </li>
       <li><a class="subheader">General</a></li>
-      <li><a class="waves-effect" href="#!"><i class="material-icons">face</i>About Me</a></li>
+      <li><a class="waves-effect" href="#!"><i class="material-icons">face</i>Who am I?</a></li>
       <li><a class="waves-effect" href="#!"><i class="material-icons">folder_open</i>Experience</a></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Personal</a></li>
@@ -41,49 +41,95 @@
     </ul>
   </nav>
   <main>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <h1 class="header center green-text">About Me</h1>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <h1 class="header center teal-text darken-4"><font face="serif">Who am I?</font></h1>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div>
+            <div class="icon-block">
+              <h4>Intro</h4>
+              <p class="light" style="text-align:justify">Hey there! Since you have made it this far, I assume that you may be interested in knowing more about me. Well, I can assure you that you have come to the right place!</p>
+              <p class="light" style="text-align:justify">I made this site solely for the purpose of facilitating people to get to know me better. Go through the links on the left to find out more about my skills, experiences and the various ways to get in touch with me, or how find me accross the web.</p>
+              <p class="light" style="text-align:justify">If you aren't bored with these details yet, then keep reading to learn more about my life. &#x263A;</p>
+              <div class="divider"></div>
+            </div>
+            <div class="icon-block">
+              <h4>Where It All Began</h4>
+              <p class="light" style="text-align:justify">I was born in the ex-capital of India, the City of Joy, Kolkata (formerly known as Calcutta).</p>
+                <div id="map" style="width:100%;height:250px;background:white"></div>
+                <script>
+                function myMap() {
+                  var mapOptions = {
+                     center: new google.maps.LatLng(22.612897, 88.401731),
+                     zoom: 18,
+                     mapTypeId: google.maps.MapTypeId.ROADMAP
+                  }
+                  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhoNU4kD5Y59vPB2mC-vF2pdeaFMFuOsA&callback=myMap"></script>
+              <p class="light" style="text-align:justify">It was at this place that I spent the first 19 years of my life, until I went to college and moved to Sonipat, Haryana.</p>
+              <div class="divider"></div>
+            </div>
+            <div class="icon-block">
+              <h4>Hobbies</h4>
+              <div class = 'row'>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center blue-text"><i class="material-icons">book</i></h2>
+                    <h5 class="center">Books</h5>
+                    <p class="light" style="text-align:justify">I read a lot of books. Personally, I prefer fiction and comics, but I've also ventured into the domain of non-fiction. My favorite book series is the Harry Potter series.</p>
+                  </div>
+                </div>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center pink-text"><i class="material-icons">library_music</i></h2>
+                    <h5 class="center">Music</h5>
+                    <p class="light" style="text-align:justify">I'm a huge fan of listening to music. Be it rock, pop or rap, I have something in my playlist for every genre. To know more, you can check out my profile on <a href = 'https://itunes.apple.com/profile/DigitalDynamo'>Apple Music</a>!</p>
+                  </div>
+                </div>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+                    <h5 class="center">Competitve Coding</h5>
+                    <p class="light" style="text-align:justify">I do a lot of competitive coding and have particpated in multiple hackathons including ACM-ICPC, CodeJAM, Kickstart, IndiaHacks, Snackdown etc. Check out my competitive programming profiles in the <a href = 'social.html'>social</a> section!</p>
+                  </div>
+                </div>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center orange-text"><i class="material-icons">videogame_asset</i></h2>
+                    <h5 class="center">Video Games</h5>
+                    <p class="light" style="text-align:justify">I'm a PC gamer since I got my first computer in 2003. I prefer to play FPSs, but other type of games also appeal to me. The Elder Scrolls V: Skyrim is my all-time favourite game! Here, check out my <a href = 'http://steamcommunity.com/id/koishore'>Steam</a> profile!</p>
+                  </div>
+                </div>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center red-text"><i class="material-icons">movie_creation</i></h2>
+                    <h5 class="center">Movies</h5>
+                    <p class="light" style="text-align:justify">Watching movies is something that I do more than reading books. I'm so into watching movies that I'm creating an app to track movie watching and show cool stats related to it. You can follow my progress <a href = 'https://www.github.com/koishore/movieapp---backend/'>here</a>.</p>
+                  </div>
+                </div>
+                <div class = 'col s12 m6'>
+                  <div class="icon-block">
+                    <h2 class="center green-text"><i class="material-icons">live_tv</i></h2>
+                    <h5 class="center">TV Shows</h5>
+                    <p class="light" style="text-align:justify">The hobby that takes up most of my time is watching TV Shows. Be it the latest season of Game of Thrones or the Marvel TV Universe, I'm up-to-date on most shows. To know more, check out my <a href = 'https://www.tvtime.com/en/koishore'>TV Time</a> profile!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-    <br><br>
-  </div>
-</main>
+  </main>
   <footer class="page-footer orange darken-3">
     <div class = "container">
       <div align='center'>
