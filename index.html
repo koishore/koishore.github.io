@@ -68,18 +68,25 @@
               <h4>Where It All Began</h4>
               <p class="light" style="text-align:justify">I was born in the ex-capital of India, the City of Joy, Kolkata (formerly known as Calcutta).</p>
                 <div id="map" style="width:100%;height:250px;background:white"></div>
+
                 <script>
                 function myMap() {
                   var mapOptions = {
                      center: new google.maps.LatLng(22.612897, 88.401731),
-                     zoom: 18,
+                     zoom: 17,
                      mapTypeId: google.maps.MapTypeId.ROADMAP
                   }
                   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                  var marker = new google.maps.Marker({
+                    position: {lat: 22.612897, lng: 88.401731},
+                    map: map,
+                    title: 'This is my place!'
+                  });
                 }
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhoNU4kD5Y59vPB2mC-vF2pdeaFMFuOsA&callback=myMap"></script>
-              <p class="light" style="text-align:justify">It was at this place that I spent the first 19 years of my life, until I went to college and moved to Sonipat, Haryana.</p>
+
+              <p class="light" style="text-align:justify">That marker you see on the map - that's the place I grew up in! It was at this place that I spent the first 19 years of my life, until I went to college and moved to Sonipat, Haryana.</p>
               <div class="divider"></div>
             </div>
             <div class="icon-block">
